@@ -12,12 +12,9 @@ public class Integrator implements org.hibernate.integrator.spi.Integrator {
         HibernateInfoHolder.setMetadata(metadata);
         HibernateInfoHolder.setSessionFactory(sessionFactory);
         HibernateInfoHolder.setServiceRegistry(serviceRegistry);
-
-        System.out.println("Integrator.integrate");
     }
 
     @Override
     public void disintegrate(SessionFactoryImplementor sessionFactory, SessionFactoryServiceRegistry serviceRegistry) {
-        System.out.println("Integrator.disintegrate");
     }
 }
